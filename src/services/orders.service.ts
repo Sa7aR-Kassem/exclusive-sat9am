@@ -77,7 +77,7 @@ export async function handlePayment(
       success: true,
       error: {},
       message: data.message || "Order placed successfully",
-      data: data.session,
+      data: data.session.url,
     };
   } catch (error) {
     console.log(error);
