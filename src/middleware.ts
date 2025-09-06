@@ -6,8 +6,8 @@ import { NextRequest } from "next/server";
 export async function middleware(request: NextRequest) {
   const cookieName =
     process.env.NODE_ENV === "production"
-      ? "next-auth.session-token"
-      : "__Secure-next-auth.session-token";
+      ? "__Secure-next-auth.session-token"
+      : "next-auth.session-token";
 
   console.log("cookieName", cookieName);
 
